@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/4562b23ee3.js" crossorigin="anonymous"></script>
+<script src="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<header>
+    <a class="logo-holder drop-shadow" href="https://www.linkedin.com/in/elena-pagano-24000075/" target="_blank">
+        <span>ELENA PAGANO</span>
+    </a>
+    <span id="clock"></span>
+</header>
+
+<div class="topnav" id="myTopnav">
+    <a href="file:///C:/Users/lelal/Desktop/coding/portfolio/portfolio.html"
+    class="active">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="https://github.com/3le81" target="_blank" id="profile-link">About</a>
+    <a href="file:///C:/Users/lelal/Desktop/coding/portfolio/contact.html"
+    target="_blank">Contact</a>
+  <a href="javascript:void(0);" class="icon" alt="hamburger icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <h1>Hi! I'm Elena,</h1>
+  <h2>a Junior Web Developer</h2>
+  </div>
+  
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/FYLjS_QXwAc3y57?format=jpg&name=4096x4096" id="img_dog" alt="dog at work" width="auto" height="280px">
+  </div>
+  
+</div>
+<section id="projects" class="projects-section">
+    <h2 class="projects-section-header">Have a look at my first projects</h2>
+    <div class="projects-grid">
+        <a href="https://codepen.io/3le81/pen/bGarwKL" target="_blank" class="project project-tile">
+            <img class="project-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png"
+                alt="project" />
+            <p class="project-title">Document Page</p>
+        </a>
+        <a href="https://codepen.io/3le81/pen/MWrgvbe" target="_blank" class="project project-tile"><img
+                src="https://mybackdrop.co.uk/wp-content/uploads/2019/01/Spring-daffodils-painted-eggs-510x340.jpg"
+                class="project-image" alt="project" />
+            <p class="project-title">Survey Form</p>
+        </a>
+        <a href="https://codepen.io/3le81/pen/oNpZbLW" target="_blank" class="project project-tile"><img
+                class="project-image"
+                src="https://image.shutterstock.com/image-vector/italian-restaurant-cartoon-illustration-landscape-600w-173997401.jpg"
+                alt="project" />
+            <p class="project-title">Landing Page</p>
+        </a>
+    </div>
+</section>
+
+<div class="game_scratch">..and <a href="https://scratch.mit.edu/projects/705558685/" target="_blank">here</a>
+    is my
+    first ever game made <em>'from Scratch!'</em>
+</div>
+<button id="myBtn"><a href="#top" style="color: white">Top</a></button>
+</main>
+
+<!-- END PROJECTS SESSION -->
+
+<!-- FOOTER!! -->
+<footer class="footer-bottom">
+<div class="foot_container">
+    <div class="row text-center">
+
+        <!--footer nav-->
+        <div class="footer-nav">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/elena-pagano-24000075/" target="_blank">About me</a>
+                </li>
+                <li><a href="https://github.com/3le81" target="_blank">GitHub</a></li>
+                <li><a href="file:///C:/Users/lelal/Desktop/coding/portfolio/contact.html"
+                        target="_blank">Contact</a></li>
+            </ul>
+        </div>
+        <!--/footer nav-->
+
+        <!--footer social-->
+        <div class="footer-social">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/home?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/?hl=en" target="_blank"><i
+                            class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <!--/footer social-->
+
+        <!--footer copyright-->
+        <div class="footer-copyright">
+            <p> Designed and developed by Elena Pagano.</p>
+            <p>&copy; All the projects have been created for my course at
+                <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i
+                        class="fab fa-free-code-camp"></i></a>
+            </p>
+        </div>
+        <!--/footer copyright-->
+
+    </div>
+</div>
+</footer>
+
+</div>   
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    };
+
+// TIME AND DATE SET 
+        var clockElement = document.getElementById('clock');
+
+    function clock() {
+        var date = new Date();
+
+        // Replace '400px' below with where you want the format to change.
+        if (window.matchMedia('(max-width: 400px)').matches) {
+            // Use this format for windows with a width up to the value above.
+            clockElement.textContent = date.toLocaleString();
+        } else {
+            // While this format will be used for larger windows.
+            clockElement.textContent = date.toString();
+        }
+    }
+
+    setInterval(clock, 1000);
+
+ // TIME DATE END
+
+</script>
+
+
+</body>
+</html>
+
+
